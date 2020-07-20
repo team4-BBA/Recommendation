@@ -1,0 +1,4 @@
+# Function dependencies, for example:
+# package>=version
+mecab-python3>=0.7
+beautifulsoup4
