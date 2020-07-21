@@ -1,4 +1,6 @@
 # Function dependencies, for example:
 # package>=version
-mecab-python3>=0.7
-beautifulsoup4
+urllib3>=0.1
+beautifulsoup4>=0.1
+gensim>=0.1
+mecab-python3==0.996.2
