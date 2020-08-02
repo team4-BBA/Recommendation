@@ -30,7 +30,7 @@ def tokenizer(text):
 
 def personal_vector(words):
     tokens=tokenizer(words)
-    num_token=0
+    num_token=1.0
     v=[0.]*300
     for t in tokens:
         try :
@@ -42,7 +42,7 @@ def personal_vector(words):
 
 def hotel_vector(hotel_id):
     v=[0.]*300
-    num_token=0
+    num_token=1.0
     for i in range(0,100,20):#100件取得
         load_url = "https://review.travel.rakuten.co.jp/hotel/voice/"+hotel_id+"/?f_sort=4&f_next="+str(i)
         html = requests.get(load_url)
